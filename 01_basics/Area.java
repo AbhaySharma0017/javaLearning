@@ -1,10 +1,10 @@
-class Pro1{
+class Area{
     private int l;
     private int w;
 
-    public void setData(int a, int b){
-        l = a;
-        w = b;
+    public void setData(int l, int w){
+       this.l = l;
+       this.w = w;
     }
 
     public int getArea(){
@@ -13,11 +13,11 @@ class Pro1{
 
     public static void main(String args[])
     {
-        Pro1 p = new Pro1();
+        Area a = new Area();
        // p.setData(10,20);
-       p.l = 10;
-       p.w = 20;
-        int area = p.getArea();
+       a.l = 10;
+       a.w = 20;
+        int area = a.getArea();
         System.out.print("Area is: "+ area);
     }
 }
