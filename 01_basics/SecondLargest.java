@@ -1,28 +1,28 @@
 class SecondLargest{
     public static void main(String args[])
     {
-        int arr[] = {6,8,2,4,3,1,5,7};
+        int arr[] = {6,8,2,3,4,1,5,7};
         int temp;
 
         for(int i=0; i<arr.length; i++)
         {
-            for(int j=i+1; j<arr.length-1; j++)
+            int flag = 0;
+            for(int j=0; j<arr.length-1-i; j++)
             {
-                if(arr[i] < arr[j])
+                if(arr[j] < arr[j+1])
                 {
-                    temp = arr[i];
-                    arr[i] = arr[j];
+                    temp = arr[j+1];
+                    arr[j+1] = arr[j];
                     arr[j] = temp;
+                    flag++;
                 }
             }
-            if(i == 2)
+            if(flag == 0)
             {
-               break;
+                break;
             }
         }
-        for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+" ");
-        }
-        System.out.print("Second largest element is : "+ arr[3]);
+        System.out.print(arr[1]);
+        
     }
 }
