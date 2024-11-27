@@ -8,7 +8,7 @@
 
   // Concrete method
   void show(){
-    System.out.print("This is an abstract method");
+    System.out.print("This is normal method");
   }
 
   public static void main(String args[])
