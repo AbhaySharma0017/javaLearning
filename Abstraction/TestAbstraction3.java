@@ -18,11 +18,13 @@ class Circle extends Shape{
      
 }
 
-class TestAbstraction1{
+class TestAbstraction3{
     public static void main(String args[])
     {
-       Shape s1 = new Rectangle();
-       s1.draw();
-       
+        Shape s1;
+        s1 = new Rectangle();
+        s1.draw();
+        s1 = new Circle();
+        s1.draw();
     }
 }

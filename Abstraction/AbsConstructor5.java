@@ -21,7 +21,7 @@ class jawa extends Bike{
         // } (We are also override concreate method);
 }
 
-class AbsConstructor{
+class AbsConstructor5{
     public static void main(String args[])
     {
         Bike b = new jawa();

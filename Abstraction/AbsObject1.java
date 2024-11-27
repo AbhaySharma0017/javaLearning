@@ -1,7 +1,7 @@
   // We can not create object of abstract class.
 
 
-  public abstract class AbsObject{
+  public abstract class AbsObject1{
   
   // Abstract method
   abstract void shape();
@@ -16,7 +16,7 @@
     int a = 10+90;
     System.out.print(a);
 
-    AbsObject obj = new AbsObject();
+    AbsObject1 obj = new AbsObject1();
     obj.show();
   }
 }

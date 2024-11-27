@@ -14,7 +14,7 @@ class Union extends Bank{
     }
 }
 
- class TestBank{
+ class TestBank4{
     public static void main(String args[])
     {
     Bank b;

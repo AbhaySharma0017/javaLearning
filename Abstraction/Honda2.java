@@ -7,14 +7,14 @@
    abstract void run();
 }
 
-public class Honda extends AbsMethod{
+public class Honda2 extends AbsMethod{
      void run(){
         System.out.print("Implement abstract method.");
      }
 
      public static void main(String args[])
      {
-        AbsMethod obj = new Honda();
+        AbsMethod obj = new Honda2();
         obj.run();
      }
 }

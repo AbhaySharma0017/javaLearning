@@ -27,7 +27,7 @@ class N extends M{
       }
 }
 
-class AbsInterface{
+class AbsInterface6{
     public static void main(String args[])
     {
         I i = new N();
