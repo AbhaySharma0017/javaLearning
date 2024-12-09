@@ -1,6 +1,6 @@
-package mypack1;
 import pack.*;
 
+package mypack1;
  public class B{
     private int a;
     private int b;
@@ -17,13 +17,5 @@ import pack.*;
     {
         A a = new A();
         a.msg();
-    }
-}
-
-class Sum {
-    public static void main(String args[])
-    {
-      B obj = new B(10,20);
-      obj.add();
     }
 }
