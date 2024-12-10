@@ -1,6 +1,6 @@
+package mypack1;
 import pack.*;
 
-package mypack1;
  public class B{
     private int a;
     private int b;
