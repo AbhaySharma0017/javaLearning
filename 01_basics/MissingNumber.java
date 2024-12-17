@@ -1,31 +1,27 @@
 class MissingNumber{
     public static void main(String args[])
     {
-        int arr[] = {8, 2, 4, 5, 3, 7, 1};
+        int arr[] = {2,1,7,5,4,8,3};
+        int sum1 = arr[0];
+        int max = arr[0];
         int temp;
-        for(int i=0; i<arr.length; i++)
+        for(int i=1; i<arr.length; i++)
         {
-            for(int j=i+1; j<arr.length; j++)
+            if(max < arr[i])
             {
-                if(arr[i] > arr[j])
-                {
-                    temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
+                temp = max;
+                max = arr[i];
+                arr[i] = temp;
+               
             }
+             sum1+=arr[i];
         }
-        int k = 1;
-        for(int i=0; i<arr.length; i++)
+        System.out.println(sum1);
+        int sum2 = 0;
+        for(int i=1; i <= max; i++)
         {
-            if(k == arr[i])
-            {
-                k++;
-            }
-            else{
-                System.out.println("Missing number is : "+k);
-                break;
-            }
+            sum2+=i;
         }
+        System.out.println("Missing number is: "+ (sum2-sum1));
     }
 }
