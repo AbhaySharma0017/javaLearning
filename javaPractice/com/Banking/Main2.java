@@ -1,3 +1,4 @@
+package com.Banking;
 import java.util.Scanner;
 class Main2{
     public static void main(String args[])
@@ -5,7 +6,7 @@ class Main2{
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the number of object: ");
-        int size = Integer.parseInt(sc.nextInt());
+        int size = Integer.parseInt(sc.nextLine());
         PeerToPeerTransaction p1[] = new PeerToPeerTransaction[size];
 
         for(int i=0; i<p1.length; i++)
@@ -21,7 +22,10 @@ class Main2{
 
             p1[i] = new PeerToPeerTransaction(id,amount,recipientName);
         }
-
+         for(int i=0; i<p1.length; i++)
+         {
+            System.out.println("Transaction Id: "+p1.getTransactionId()+" /n Amount: "+p1.getAmount+" /n Recipient Name: "+p1.getRecipient);
+         }
 
     }
 }

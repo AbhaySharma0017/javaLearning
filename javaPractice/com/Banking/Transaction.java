@@ -1,3 +1,4 @@
+package com.Banking;
 class Transaction{
     private int transactionId;
     private long amount;

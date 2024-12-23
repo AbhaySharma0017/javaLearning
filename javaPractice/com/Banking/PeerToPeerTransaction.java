@@ -1,3 +1,4 @@
+package com.Banking;
 class  PeerToPeerTransaction extends Transaction{
     private String recipient;
 
