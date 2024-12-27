@@ -1,17 +1,17 @@
 package com.Banking;
 class Transaction{
     private int transactionId;
-    private long amount;
+    private double amount;
 
-   public Transaction(int transactionId, long amount)
+   public Transaction(int transactionId, double amount)
     {
         this.transactionId = transactionId;
         this.amount = amount;
     }
     int getTransactionId(){
         return transactionId;
-    } 
-    long getAmount()
+    }   
+    double getAmount()
     {
         return amount;
     }

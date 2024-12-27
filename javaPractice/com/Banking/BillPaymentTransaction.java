@@ -1,12 +1,13 @@
-class  PeerToPeerTransaction extends Transaction{
+package com.Banking;
+class  BillPaymentTransaction extends Transaction{
     private String billType;
 
-    public PeerToPeerTransaction(int transactionId, long amount, String billType)
+    public BillPaymentTransaction(int transactionId, double amount, String billType)
     {
         super(transactionId,amount);
         this.billType = billType;
     }
-     String getBillType(){
+     public String getBillType(){
         return billType;
     }
 }

@@ -8,14 +8,14 @@ class Main2{
         System.out.print("Enter the number of object: ");
         int size = Integer.parseInt(sc.nextLine());
         PeerToPeerTransaction p1[] = new PeerToPeerTransaction[size];
-
+        // PeerToPeerTransaction p2 = new PeerToPeerTransaction();
         for(int i=0; i<p1.length; i++)
         {
             System.out.println("Enter transaction ID: ");
             int id = Integer.parseInt(sc.nextLine());
 
             System.out.println("Enter amount : ");
-            long amount = Long.parseLong(sc.nextLine());
+            double amount = Double.parseDouble(sc.nextLine());
 
             System.out.println("Enter recipient name : ");
             String recipientName  = sc.nextLine();
@@ -24,8 +24,13 @@ class Main2{
         }
          for(int i=0; i<p1.length; i++)
          {
-            System.out.println("Transaction Id: "+p1.getTransactionId()+" /n Amount: "+p1.getAmount+" /n Recipient Name: "+p1.getRecipient);
+            System.out.println("Transaction Id: "+p1[i].getTransactionId()+" \n Amount: "+p1[i].getAmount()+" \n Recipient Name: "+p1[i].getRecipient());
          }
 
+         BillPaymentTransaction b1 = new BillPaymentTransaction(2,57000,"Electricity Bill");
+         System.out.println("Id: "+b1.getTransactionId()+"\n Amount: "+b1.getAmount()+"\n Bill Type: "+b1.getBillType());
+
+         OnlinePurchaseTransaction o1 = new OnlinePurchaseTransaction(3,50000,"Abhay");
+         System.out.println("Id: "+o1.getTransactionId()+"\n Amount: "+b1.getAmount()+"\n Merchant: "+o1.getMerchant());
     }
 }
