@@ -1,5 +1,7 @@
 //Find largest element from Array.
 
+// There are many way to solve this problem like (1) sort it in assending order and print last element. but in this way thime complexcity is     O(n log n) high
+// 2) using below approach
 import java.util.Scanner;
 class LargestElement{
     public static void main(String args[])
