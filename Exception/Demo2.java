@@ -12,6 +12,9 @@ class Demo2{
             System.out.println(s1);
             System.out.println(s2);
         }
+
+       // System.out.println("try' without 'catch.");
+       
         catch(Exception e){
          System.out.println("Error");
         }

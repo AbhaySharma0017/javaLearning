@@ -1,17 +1,17 @@
-class A{
-    void test1() throws FileNotFoundException{
-        test2();
-    }
-    void test2() throws FileNotFoundException{
-        test3();
-    }
-    void test3() throws FileNotFoundException{
-        int x = 10/0;
-    }
-}
+// Finally
+
 class Demo4{
     public static void main(String args[]){
-       A obj = new A();
-       obj.test1();
+        try{
+            int x = 10/0;
+            System.out.println(x);
+        }
+
+     //   System.out.println("Finally is not executed.");
+
+        finally{
+            System.out.println("finally block is always execute whether exception handle or not.");
+            System.out.println("We can write here more than one statement.");
+        }
     }
 }
